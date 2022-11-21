@@ -12,12 +12,12 @@ NavMeshProjectSettings:
   - name: Jump
     cost: 2
   - name: Walk
-    cost: 1
+    cost: 10
   - name: Road
-    cost: 1
+    cost: 10
   - name: Park
     cost: 1
-  - name: 
+  - name: fast
     cost: 1
   - name: 
     cost: 1
