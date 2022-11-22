@@ -4981,7 +4981,8 @@ MonoBehaviour:
   _serializedBlackboard: '{"_variables":{"Car":{"_name":"Car","_id":"607ff9fa-8ecf-4818-9334-58fcf1edd02d","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"parkspace":{"_value":1,"_name":"parkspace","_id":"c1a0621e-2b23-48c9-910e-891f352fadf4","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"CarAct":{"_name":"CarAct","_id":"2dd33b8a-8504-43e2-b8ee-19c58e4d2cef","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"park":{"_name":"park","_id":"9f63832a-01da-4ce7-8b34-7373b609540c","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
   _objectReferences:
   - {fileID: 0}
   - {fileID: 1991253366}
@@ -4997,6 +4998,9 @@ MonoBehaviour:
   - _json: '{"_name":"CarAct","_id":"2dd33b8a-8504-43e2-b8ee-19c58e4d2cef","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
+  - _json: '{"_name":"park","_id":"9f63832a-01da-4ce7-8b34-7373b609540c","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
 --- !u!114 &632288174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5011,7 +5015,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
   _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"saveAs":{"_name":"Car","_targetVariableID":"607ff9fa-8ecf-4818-9334-58fcf1edd02d"},"$type":"NodeCanvas.Tasks.Actions.GetSelf"},{"valueA":{"_name":"parkspace","_targetVariableID":"c1a0621e-2b23-48c9-910e-891f352fadf4"},"valueB":{"_value":1},"$type":"NodeCanvas.Tasks.Actions.SetVariable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}]},"_position":{"x":301.8996,"y":151.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"target":{"_name":"parkspace","_targetVariableID":"c1a0621e-2b23-48c9-910e-891f352fadf4"},"speed":{"_value":6.36},"keepDistance":{"_value":0.1},"$type":"NodeCanvas.Tasks.Actions.MoveToGameObject"}]},"_position":{"x":707.6647,"y":373.6666},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"}],"connections":[{"_condition":{"valueA":{"_name":"CarAct","_targetVariableID":"2dd33b8a-8504-43e2-b8ee-19c58e4d2cef"},"valueB":{"_value":true},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"park","_targetVariableID":"9f63832a-01da-4ce7-8b34-7373b609540c"},"valueB":{"_value":{"x":-187.0,"z":128.0}},"$type":"NodeCanvas.Tasks.Actions.SetVariable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}]},"_position":{"x":301.8996,"y":151.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"target":{"_name":"parkspace","_targetVariableID":"c1a0621e-2b23-48c9-910e-891f352fadf4"},"speed":{"_value":6.36},"keepDistance":{"_value":4.71},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.MoveToGameObject"},{"targetPosition":{"_name":"park","_targetVariableID":"9f63832a-01da-4ce7-8b34-7373b609540c"},"speed":{"_value":8.75},"keepDistance":{"_value":4.42},"$type":"NodeCanvas.Tasks.Actions.MoveToPosition"}]},"_position":{"x":704.9519,"y":379.6124},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"}],"connections":[{"_condition":{"valueA":{"_name":"CarAct","_targetVariableID":"2dd33b8a-8504-43e2-b8ee-19c58e4d2cef"},"valueB":{"_value":true},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
   - {fileID: 1991253366}
@@ -5019,8 +5024,8 @@ MonoBehaviour:
     _version: 3.22
     _category: 
     _comments: 
-    _translation: {x: 152, y: 78}
-    _zoomFactor: 0.61862296
+    _translation: {x: 126, y: 24}
+    _zoomFactor: 0.3686322
   _firstActivation: 0
   _enableAction: 0
   _disableAction: 0
@@ -12380,6 +12385,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c838be5f7abd9c64db9643ebadf0c932, type: 3}
+--- !u!1 &1018194822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1018194823}
+  m_Layer: 0
+  m_Name: WorkLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1018194823
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018194822}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -187, y: 0, z: 128}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1019101990
 PrefabInstance:
   m_ObjectHideFlags: 0
