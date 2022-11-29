@@ -11,15 +11,15 @@ NavMeshProjectSettings:
     cost: 1
   - name: Jump
     cost: 2
-  - name: Walk
+  - name: WalkInter
     cost: 10
   - name: Road
     cost: 10
-  - name: Park
+  - name: ParkLane
     cost: 1
-  - name: fast
+  - name: FastRoute
     cost: 1
-  - name: 
+  - name: Grass
     cost: 1
   - name: 
     cost: 1
