@@ -16,7 +16,7 @@ NavMeshProjectSettings:
   - name: Road
     cost: 10
   - name: ParkLane
-    cost: 1
+    cost: 10
   - name: FastRoute
     cost: 1
   - name: Grass
